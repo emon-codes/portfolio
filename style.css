@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: "Rajdhani", sans-serif;
+}
+
+
+
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+    
+}
+
+
+
+.navlinks{
+    position: relative;
+    
+} 
+
+a::after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left:0;
+    height: 2px;
+   
+    width: 0;
+    background-color: red;
+    transition: 0.5s;
+} 
+
+a:hover::after{
+    width: 100%;
+    
+} 
+
+
+.bg-card {
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; 
+    }
+
+.bg-card:hover {
+transform: translateY(-5px);    
+box-shadow: 0 0 15px rgba(233, 30, 99, 0.5); 
+border-color: #e91e63; 
+}
