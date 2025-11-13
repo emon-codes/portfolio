@@ -6,6 +6,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://lottie.host/339a7e67-672b-4e4b-9198-5997ff5bc669/Yci2rjpE2O.lottie">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
     <style type="text/tailwindcss">
       @theme{
     --color-primary: #FF014F;
@@ -44,7 +46,7 @@
                        <li class="navlinks"><a href="#" class="block navlink  text-white text-[20px]  px-6 py-2 hover:translate-x-2  hover:text-primary transition-all duration-300 rounded-b-lg whitespace-nowrap">Comming soon</a></li>
                     </ul>
                </li>
-                <li class="navlinks"><a class=" navlink text-white text-[20px] hover:text-primary  duration-150 ease-in-out" href="">Contact</a></li>
+                <li class="navlinks"><a class=" navlink text-white text-[20px] hover:text-primary  duration-150 ease-in-out" href="./Contact.html">Contact</a></li>
               </ul>
 
             </div>
@@ -103,15 +105,21 @@
       </div>
     </section>
 
-
+<!-- tool section  -->
 
 
 <!-- Skills Section -->
-<section class="bg-[#160E0E]">
+<section class="bg-[#160E0E] py-10">
 
-<div id="skills" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 container ">
-   <div class="w-full space-y-3 bg-gray-800 p-8 rounded-2xl shadow-xl ">
-    <h2 class="text-3xl font-bold text-white text-center mb-6">My Skills</h2>
+<div id="skills" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 container relative">
+
+
+
+
+   <div class="w-full space-y-3 bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a]
+ text-white
+ p-8 rounded-2xl shadow-xl ">
+    <h2 class="text-3xl font-bold text-white text-center mb-6">My <span class="text-primary">Skills</span></h2>
 
     
     <div>
@@ -170,39 +178,14 @@
 
   </div>
 
-  <div class="bg-gray-800 p-10 rounded-2xl shadow-2xl w-full ">
-    <h2 class="text-3xl font-bold text-white text-center mb-6">Contact <span class="text-pink-500">Me</span></h2>
-    <p class="text-gray-400 text-center mb-8">Feel free to reach out — I’ll get back to you as soon as possible!</p>
 
-    <form action="#" method="POST" class="space-y-6">
-     
-      <div>
-        <label class="block text-gray-300 mb-2" for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name"
-               class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-pink-500">
-      </div>
 
-    
-      <div>
-        <label class="block text-gray-300 mb-2" for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email"
-               class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-pink-500">
-      </div>
+    <div class="relative -right-[20px] -top-15"> 
+  
+      <dotlottie-wc src="https://lottie.host/339a7e67-672b-4e4b-9198-5997ff5bc669/Yci2rjpE2O.lottie" class="h-auto absolute w-[1000px]" autoplay loop></dotlottie-wc>
+    </div>
 
-      
-      <div>
-        <label class="block text-gray-300 mb-2" for="message">Message</label>
-        <textarea id="message" name="message" rows="4" placeholder="Write your message..."
-                  class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
-      </div>
-//////////////////////////////////////////////////////////////////////////
-     
-      <button type="submit"
-              class="w-full py-3 bg-gradient-to-r from-pink-500 to-red-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition duration-300 shadow-lg hover:shadow-pink-500/50">
-        Send Message
-      </button>
-    </form>
-  </div>
+
 </div>
 </section>
 
