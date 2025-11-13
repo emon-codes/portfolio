@@ -14,6 +14,17 @@ body{
     }
 
 
+    /* typing animation er jono */
+    /* এই অংশটি HTML এর <style> ট্যাগের মধ্যে বা আপনার style.css এ রাখতে পারেন */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+.blinking-cursor::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
 
 
 .container{

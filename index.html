@@ -63,19 +63,23 @@
         </header>
 
 
-      <div class="hero container flex flwx-row justify-between items-center pt-30 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.5)]">
+      <div class="hero container flex flwx-row justify-between items-center pt-30 ">
 
-        <div class="content flex flex-col">
+        <div class="content flex flex-col py-5">
           <h2 class="text-[28px] font-[700] text-white">HELLO</h2>
           <h1 class="text-[68px] font-[800] text-white">I'm Emon Ahmed a</h1>
-          <span class="text-primary text-[70px] font-[800]">Web Devoloper</span>
+     
 
- <button
-  onclick="window.open('https://drive.google.com/file/d/1xdpR21Q416B_O0Qcw8vDInQlSQ0sJH7e/view', '_blank')"
-  class="flex items-center justify-center gap-1 px-2 py-3 bg-gradient-to-r from-pink-500 to-red-600 text-white font-semibold text-xl rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out max-w-70"
->
-  Resume <i class="fa-solid fa-download text-lg"></i>
-</button>
+          <div class="text-7xl font-extrabold text-blue-500 pb-10">
+             <span id="typed-text" class="blinking-cursor"></span>
+          </div>          
+
+          <div class="w-auto h-auto py-10">
+            <button
+                  onclick="window.open('https://drive.google.com/file/d/1xdpR21Q416B_O0Qcw8vDInQlSQ0sJH7e/view', '_blank')"
+                    class="flex items-center justify-center gap-1 px-20 py-4 bg-gradient-to-r from-pink-500 to-red-600 text-white font-semibold text-xl rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out"> Resume <i class="fa-solid fa-download text-lg"></i>
+            </button>
+          </div>
 
 
 
@@ -105,7 +109,7 @@
 <!-- Skills Section -->
 <section class="bg-[#160E0E]">
 
-<div id="skills" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 container py-10">
+<div id="skills" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 container ">
    <div class="w-full space-y-3 bg-gray-800 p-8 rounded-2xl shadow-xl ">
     <h2 class="text-3xl font-bold text-white text-center mb-6">My Skills</h2>
 
@@ -166,7 +170,7 @@
 
   </div>
 
-  <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl w-full ">
+  <div class="bg-gray-800 p-10 rounded-2xl shadow-2xl w-full ">
     <h2 class="text-3xl font-bold text-white text-center mb-6">Contact <span class="text-pink-500">Me</span></h2>
     <p class="text-gray-400 text-center mb-8">Feel free to reach out — I’ll get back to you as soon as possible!</p>
 
@@ -191,10 +195,10 @@
         <textarea id="message" name="message" rows="4" placeholder="Write your message..."
                   class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
       </div>
-
+//////////////////////////////////////////////////////////////////////////
      
       <button type="submit"
-              class="w-full py-3 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition duration-300 shadow-lg hover:shadow-pink-500/50">
+              class="w-full py-3 bg-gradient-to-r from-pink-500 to-red-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition duration-300 shadow-lg hover:shadow-pink-500/50">
         Send Message
       </button>
     </form>
