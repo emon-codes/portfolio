@@ -1,17 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://lottie.host/339a7e67-672b-4e4b-9198-5997ff5bc669/Yci2rjpE2O.lottie">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+    <style type="text/tailwindcss">
+      @theme{
+    --color-primary: #FF014F;
+    --color-secondary:#e8e6e3;
+    
+}
+    </style>
 </head>
-<body class="bg-amber-950">
-    <div class="container  max-w-20">
-  <div class="bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white p-10 rounded-2xl shadow-2xl w-full ">
-    <h2 class="text-3xl font-bold text-white text-center mb-6">Contact <span class="text-primary">Me</span></h2>
+<body class="bg-[#1B1112]">
+    <header class="fixed top-0 w-full flex justify-center z-10 backdrop-blur-md">
+          <div class=" container flex justify-between items-center">
+            <div class="logo "><h1 class="text-primary font-[800] text-[50px] cursor-pointer">EMON</h1></div>
+            <div class="nav">
+              <ul class="flex flex-row gap-5">
+                <li class="navlinks"><a href="" class="text-white text-[20px] hover:text-primary  duration-150 ease-in-out ">Home</a></li>
+                <li class="navlinks"><a class="text-white navlink  text-[20px] hover:text-primary  duration-150 ease-in-out" href="">About</a></li>
+                <li class="relative group navlinks" ><a class=" navlink text-white hover:text-primary text-[20px] " href="">Services <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500"></i></a>
+                    <ul class="absolute overflow-hidden left-0 mt-2 bg-gray-800 border border-gray-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100">
+                      <li class="navlinks"><a href="#" class="block navlink  text-white text-[20px]  px-6 py-2  hover:translate-x-2  hover:text-primary transition-all duration-300 rounded-t-lg">Web Design</a></li>
+                      <li class="navlinks"><a href="#" class="block navlink  text-white text-[20px]  px-6 py-2 hover:translate-x-2  hover:text-primary transition-all duration-300">Development</a></li>
+                       <li class="navlinks"><a href="#" class="block navlink  text-white text-[20px]  px-6 py-2 hover:translate-x-2  hover:text-primary transition-all duration-300 rounded-b-lg">SEO</a></li>
+                    </ul>
+                </li>
+                
+                </li>
+                
+                 <li class="relative group navlinks" ><a  class=" navlink text-white text-[20px] hover:text-primary  duration-150 ease-in-out" href=""> Project <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500"></i></a>
+                    <ul class="absolute overflow-hidden left-0 mt-2 bg-gray-800 border border-gray-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100">
+                      <li class="navlinks"><a href="#" class="block navlink  text-white text-[20px]  px-6 py-2 w-full hover:translate-x-2  hover:text-primary transition-all duration-300 rounded-t-lg whitespace-nowrap">Comming soon</a></li>
+                      <li class="navlinks"><a href="#" class="block navlink  text-white text-[20px]  px-6 py-2 hover:translate-x-2  hover:text-primary transition-all duration-300 whitespace-nowrap">Comming soon</a></li>
+                       <li class="navlinks"><a href="#" class="block navlink  text-white text-[20px]  px-6 py-2 hover:translate-x-2  hover:text-primary transition-all duration-300 rounded-b-lg whitespace-nowrap">Comming soon</a></li>
+                    </ul>
+               </li>
+                <li class="navlinks"><a class=" navlink text-white text-[20px] hover:text-primary  duration-150 ease-in-out" href="./Contact.html">Contact</a></li>
+              </ul>
+
+            </div>
+            <div class="socail-icon flex flex-row gap-2">
+              <div class="rounded-full w-8 h-8 flex justify-center items-center hover:bg-primary duration-200 ease-in-out transform border border-[#e8e6e3]"><a target="_blank" href="https://www.facebook.com/emon77ear"><i class="fa-brands fa-facebook-f text-[16px]  text-white"></i></a></i></div>
+
+
+               <div class="rounded-full w-8 h-8 flex justify-center items-center hover:bg-primary duration-200 ease-in-out transform border border-[#e8e6e3]"><a target="_blank" href="https://www.linkedin.com/in/emon-ahmed-rana-8a3821255/"><i class="fa-brands fa-linkedin-in text-[16px]  text-white"></i></a></div>
+
+              <div class="rounded-full w-8 h-8 flex justify-center items-center hover:bg-primary duration-200 ease-in-out transform border border-[#e8e6e3]"><a target="_blank" href="https://www.instagram.com/its.em0n/"><i class="fa-brands fa-instagram text-[16px]  text-white"></i></a></div>
+
+              <div class="rounded-full w-8 h-8 flex justify-center items-center hover:bg-primary duration-200 ease-in-out transform border border-[#e8e6e3]"><a target="_blank" href="https://github.com/emon-codes"><i class="fa-brands fa-github text-[16px] text-white"></i></a></div>
+
+            </div>
+          </div>
+        </header>
+
+
+    <div class=" container pt-50 flex justify-center  ">
+  <div class="bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white p-20 rounded-2xl shadow-2xl max-w-[700rem]">
+    <h2 class="text-3xl font-bold text-white text-center mb-6 px-90">Contact <span class="text-primary">Me</span></h2>
     <p class="text-gray-400 text-center mb-8">Feel free to reach out — I’ll get back to you as soon as possible!</p>
 
     <form action="#" method="POST" class="space-y-6">
