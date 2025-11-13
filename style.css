@@ -5,6 +5,14 @@ body{
     font-family: "Rajdhani", sans-serif;
 }
 
+   @keyframes fillAnimation {
+      from { width: 0%; }
+      to { width: var(--progress); }
+    }
+    .progress-bar {
+      animation: fillAnimation 2s ease-in-out forwards;
+    }
+
 
 
 
@@ -21,7 +29,7 @@ body{
     
 } 
 
-a::after{
+.navlink::after{
     position: absolute;
     content: "";
     bottom: -5px;
@@ -33,7 +41,7 @@ a::after{
     transition: 0.5s;
 } 
 
-a:hover::after{
+.lavlink:hover::after{
     width: 100%;
     
 } 
