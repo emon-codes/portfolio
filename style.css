@@ -1,75 +1,54 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
+
+
+ /* font-family: "Rajdhani"; */
 body{
-    font-family: "Rajdhani", sans-serif;
+       min-height: 100vh;
+
+    background-image: linear-gradient(
+        to bottom right,
+        #0f172a, 
+        #1e293b, 
+        #3730a3  
+    );
+
+    color: #f1f5f9; 
+}
+.font-Rajdhani{
+font-family: "Rajdhani";
+
 }
 
-   @keyframes fillAnimation {
-      from { width: 0%; }
-      to { width: var(--progress); }
+
+
+
+.container-custom{max-width:1380px;margin-left:auto;margin-right:auto;padding-left:1.5rem;padding-right:1.5rem;}
+    /* subtle glass cards */
+    .glass{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.06)}
+    body{cursor:pointer}
+      /* nav hover underline */
+    .nav-link::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-4px;
+      width:0;
+      height:2px;
+      background:#ff4f9a;
+      transition:0.3s;
     }
-    .progress-bar {
-      animation: fillAnimation 2s ease-in-out forwards;
+    .nav-link:hover::after{
+      width:100%;
     }
-
-
-    /* typing animation er jono */
-    /* এই অংশটি HTML এর <style> ট্যাগের মধ্যে বা আপনার style.css এ রাখতে পারেন */
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
-.blinking-cursor::after {
-    content: '|';
-    animation: blink 0.7s infinite;
-}
-
-
-
-.container{
-    max-width: 1440px;
-    margin: auto;
-    /* box-shadow: 0px 4px px -1px rgba(0, 0, 0, 0.5); */
-    
-   
-    
-}
-
-
-
-.navlinks{
-    position: relative;
-    
-} 
-
-.navlink::after{
-    position: absolute;
-    content: "";
-    bottom: -5px;
-    left:0;
-    height: 2px;
-   
-    width: 0;
-    background-color: red;
-    transition: 0.5s;
-} 
-
-.lavlink:hover::after{
-    width: 100%;
-    
-} 
-
-
-.bg-card {
-   
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; 
+    /* hire me hover */
+    .hire-btn{
+      transition:0.3s;
+    }
+    .hire-btn:hover{
+      transform:scale(1.07);
+      box-shadow:0 0 18px #ff4f9a;
     }
 
-.bg-card:hover {
-transform: translateY(-5px);    
-box-shadow: 0 0 15px rgba(233, 30, 99, 0.5); 
-border-color: #e91e63; 
-}
+
