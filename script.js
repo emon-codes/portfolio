@@ -58,31 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //   <script>
     AOS.init({duration:700,once:true});
     document.getElementById('year').textContent = new Date().getFullYear();
