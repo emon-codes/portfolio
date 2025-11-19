@@ -27,7 +27,7 @@ font-family: "Rajdhani";
 .container-custom{max-width:1380px;margin-left:auto;margin-right:auto;padding-left:1.5rem;padding-right:1.5rem;}
     /* subtle glass cards */
     .glass{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.06)}
-    body{cursor:pointer}
+    
       /* nav hover underline */
     .nav-link::after{
       content:"";
