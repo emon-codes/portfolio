@@ -183,8 +183,6 @@
     </div>
   </div></a>
 </article>
-
-
            <article class="rounded-xl overflow-hidden glass hover:scale-105 transition transform" data-aos="fade-up">
           <img src="./Projects/projects-img/project3.png" alt="project" class="w-full h-40 object-cover">
           <div class="p-4">
@@ -196,12 +194,6 @@
             </div>
           </div>
         </article>
-
-       
-
-
-
-
 
         <article class="rounded-xl overflow-hidden glass hover:scale-105 transition transform" data-aos="fade-up" data-aos-delay="160">
           <img src="./Images/project-img.png" alt="project" class="w-full h-40 object-cover ">
@@ -221,47 +213,47 @@
 
   <!-- CONTACT -->
   <section id="contact" class="py-16">
-    <div class="container-custom">
-      <div class="grid grid-cols-1 md:grid-cols-1 gap-10 items-center">
+  <div class="container-custom">
+    <div class="grid grid-cols-1 md:grid-cols-1 gap-10 items-center">
 
-       
+      <div>
+        <h2 class="text-2xl font-bold mb-6">Get in touch</h2>
 
-        <!--  Form -->
-        <div>
-          <h2 class="text-2xl font-bold mb-6">Get in touch</h2>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="bg-white p-8 rounded-2xl shadow-xl text-slate-800">
+          <input type="hidden" name="access_key" value="336067ef-c3ea-45cf-8738-995a37d01bf7" />
+          <input type="hidden" name="_captcha" value="false" />
 
-          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="bg-white p-8 rounded-2xl shadow-xl text-slate-800">
-            <input type="hidden" name="access_key" value="YOUR-WEB3FORMS-ACCESS-KEY" />
-            <input type="hidden" name="_captcha" value="false" />
-            <h2 class="text-2xl font-bold mb-8 text-black">Contact Us</h2>
+          <h2 class="text-2xl font-bold mb-8 text-black">Contact Us</h2>
 
-            <div id="formMessages" class="hidden p-3 rounded-lg text-sm mb-4"></div>
+          <!-- Success / Error Message -->
+          <div id="formStatus" class="hidden p-3 rounded-lg text-sm mb-4"></div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label class="block text-sm font-semibold mb-1">Your Name</label>
-                <input id="nameField" name="name" placeholder="Enter your name" class="w-full border-b border-gray-300 focus:border-gray-500 outline-none py-2" />
-              </div>
-              <div>
-                <label class="block text-sm font-semibold mb-1">Email</label>
-                <input id="emailField" name="email" type="email" placeholder="Enter your email address" class="w-full border-b border-gray-300 focus:border-gray-500 outline-none py-2" />
-              </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-semibold mb-1">Your Name</label>
+              <input name="name" required placeholder="Enter your name" class="w-full border-b border-gray-300 focus:border-gray-500 outline-none py-2" />
             </div>
-
-            <div class="mt-6">
-              <label class="block text-sm font-semibold mb-1">Message</label>
-              <textarea id="msgField" name="message" rows="4" placeholder="Your message here..." class="w-full border-b border-gray-300 focus:border-gray-500 outline-none py-2"></textarea>
+            <div>
+              <label class="block text-sm font-semibold mb-1">Email</label>
+              <input name="email" type="email" required placeholder="Enter your email" class="w-full border-b border-gray-300 focus:border-gray-500 outline-none py-2" />
             </div>
+          </div>
 
-            <button id="submitBtn" type="submit" class="mt-8 px-8 py-3 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-red-300 shadow-lg font-semibold flex items-center gap-2 transition">
-              Submit →
-              <span id="spinner" class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
-            </button>
-          </form>
-        </div>
+          <div class="mt-6">
+            <label class="block text-sm font-semibold mb-1">Message</label>
+            <textarea name="message" rows="4" required placeholder="Your message here..." class="w-full border-b border-gray-300 focus:border-gray-500 outline-none py-2"></textarea>
+          </div>
+
+          <button id="submitBtn" type="submit" class="mt-8 px-8 py-3 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-red-300 shadow-lg font-semibold flex items-center gap-2 transition">
+            Submit →
+            <span id="spinner" class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+          </button>
+        </form>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- FOOTER -->
 <footer class="  text-white py-8">
