@@ -21,6 +21,28 @@ font-family: "Rajdhani";
 
 }
 
+/* skill section  */
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.skills-scroll {
+  animation: scroll 100s linear infinite;
+  will-change: transform;
+}
+
+.skills-wrapper:hover .skills-scroll {
+  animation-play-state: paused;
+}
+
+
+
+/* skill section end  */
+
+
+
 
 
 
