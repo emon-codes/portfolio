@@ -22,21 +22,30 @@ font-family: "Rajdhani";
 }
 
 /* skill section  */
-
 @keyframes scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
 .skills-scroll {
-  animation: scroll 100s linear infinite;
+  display: flex;
+  width: max-content;
+
+  /* 👇 speed & smoothness */
+  animation: scroll 40s linear infinite;
+
+  /* 👇 GPU acceleration */
   will-change: transform;
+  backface-visibility: hidden;
 }
 
-.skills-wrapper:hover .skills-scroll {
-  animation-play-state: paused;
+.skills-wrapper {
+  overflow: hidden;
 }
-
 
 
 /* skill section end  */
