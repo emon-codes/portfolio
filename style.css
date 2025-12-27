@@ -93,7 +93,36 @@ font-family: "Rajdhani";
 
 
 
-    /* contact us  */
+    /* footer */
+   
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  .footer-animate {
+    animation: fadeUp 1s ease-out forwards;
+  }
+
+  .logo-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
 
 
 
