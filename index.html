@@ -432,53 +432,72 @@
 </section>
 
   <!-- FOOTER -->
-<footer class="text-white py-8 footer-animate">
-  <div class="container-custom mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-      
+<footer class="text-white py-8 
+transition-all duration-700 ease-out 
+hover:bg-white/5">
+
+  <div class="container-custom mx-auto px-4 sm:px-6 lg:px-8
+  transition-all duration-700">
+
+    <!-- Top Row -->
+    <div class="flex flex-col md:flex-row justify-between items-center 
+    space-y-4 md:space-y-0
+    transition-all duration-700">
+
       <!-- Logo -->
-      <div class="logo logo-float">
-        <h1 class="text-primary font-[800] text-[50px] cursor-pointer transition-transform duration-300 hover:scale-105">
+      <div class="logo
+      transition-all duration-500 ease-in-out
+      hover:-translate-y-1 hover:scale-105">
+        <h1 class="text-primary font-[800] text-[50px] cursor-pointer
+        transition-all duration-300
+        hover:tracking-widest">
           EMON
         </h1>
       </div>
 
       <!-- Social Icons -->
       <div class="socail-icon flex flex-row gap-3">
-        
-        <div class="hire-btn rounded-full w-8 h-8 flex justify-center items-center 
+
+        <!-- Facebook -->
+        <div class="hire-btn rounded-full w-8 h-8 flex justify-center items-center
         border border-[#e8e6e3]
-        transition-all duration-300
-        hover:bg-primary hover:scale-110 hover:rotate-6 hover:shadow-lg">
-          <a target="_blank" href="https://www.facebook.com/emon77ear">
+        transition-all duration-300 ease-in-out
+        hover:bg-primary hover:scale-110 hover:-translate-y-1">
+          <a target="_blank" href="https://www.facebook.com/emon77ear"
+          class="transition-transform duration-300 hover:rotate-12">
             <i class="fa-brands fa-facebook-f text-[16px] text-white"></i>
           </a>
         </div>
 
-        <div class="hire-btn rounded-full w-8 h-8 flex justify-center items-center 
+        <!-- LinkedIn -->
+        <div class="hire-btn rounded-full w-8 h-8 flex justify-center items-center
         border border-[#e8e6e3]
         transition-all duration-300
-        hover:bg-primary hover:scale-110 hover:-rotate-6 hover:shadow-lg">
-          <a target="_blank" href="https://www.linkedin.com/in/emon-ahmed-rana-8a3821255/">
+        hover:bg-primary hover:scale-110 hover:-translate-y-1">
+          <a target="_blank" href="https://www.linkedin.com/in/emon-ahmed-rana-8a3821255/"
+          class="transition-transform duration-300 hover:-rotate-12">
             <i class="fa-brands fa-linkedin-in text-[16px] text-white"></i>
           </a>
         </div>
 
-        <div class="hire-btn rounded-full w-8 h-8 flex justify-center items-center 
+        <!-- Instagram -->
+        <div class="hire-btn rounded-full w-8 h-8 flex justify-center items-center
         border border-[#e8e6e3]
         transition-all duration-300
-        hover:bg-primary hover:scale-110 hover:rotate-6 hover:shadow-lg">
-          <a target="_blank" href="https://www.instagram.com/its.em0n/">
+        hover:bg-primary hover:scale-110 hover:-translate-y-1">
+          <a target="_blank" href="https://www.instagram.com/its.em0n/"
+          class="transition-transform duration-300 hover:rotate-12">
             <i class="fa-brands fa-instagram text-[16px] text-white"></i>
           </a>
         </div>
 
-        <div class="hire-btn rounded-full w-8 h-8 flex justify-center items-center 
+        <!-- GitHub -->
+        <div class="hire-btn rounded-full w-8 h-8 flex justify-center items-center
         border border-[#e8e6e3]
         transition-all duration-300
-        hover:bg-primary hover:scale-110 hover:-rotate-6 hover:shadow-lg">
-          <a target="_blank" href="https://github.com/emon-codes">
+        hover:bg-primary hover:scale-110 hover:-translate-y-1">
+          <a target="_blank" href="https://github.com/emon-codes"
+          class="transition-transform duration-300 hover:-rotate-12">
             <i class="fa-brands fa-github text-[16px] text-white"></i>
           </a>
         </div>
@@ -486,9 +505,15 @@
       </div>
     </div>
 
-    <hr class="border-gray-700 my-6 opacity-0 animate-[fadeUp_1s_ease-out_0.5s_forwards]">
+    <!-- Divider -->
+    <hr class="border-gray-700 my-6
+    transition-all duration-500
+    hover:border-primary hover:scale-x-105">
 
-    <div class="text-center text-sm text-gray-400 opacity-0 animate-[fadeUp_1s_ease-out_0.8s_forwards]">
+    <!-- Bottom Text -->
+    <div class="text-center text-sm text-gray-400
+    transition-all duration-500
+    hover:text-white hover:tracking-wide">
       &copy; <span id="year"></span> Emon Ahmed | Web Developer & Tech Enthusiast
     </div>
 
